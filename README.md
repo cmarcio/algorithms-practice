@@ -1,2 +1,2 @@
 # algorithms-practice
-A collection of algorithms and data structures developed for practice purposes.
+A collection of algorithms and data structures developed for practicing purposes.
