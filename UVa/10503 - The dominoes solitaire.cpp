@@ -18,7 +18,7 @@ void add_domino(int a, int b) {
         dominos[b][a] += 1;
     }
     else {
-        cout << "1 - invalide piece!\n";
+        cout << "1 - invalide piece!\n"; // just for testing
     }
 }
 
@@ -28,14 +28,13 @@ void remove_domino(int a, int b) {
         dominos[b][a] -= 1;
     }
     else {
-        cout << "2 - invalide piece!\n";
+        cout << "2 - invalide piece!\n"; // just for testing
     }
 }
 
 bool place_domino( pair<int,int> l, pair<int,int> r, int n) {
-    //cout << n << ": " << l.first << " " << l.second << "\n";
     if (n == 0) {
-        return ((l.second == r.first)); //|| (l.second == r.second));
+        return ((l.second == r.first));
         
     }
     
@@ -43,7 +42,6 @@ bool place_domino( pair<int,int> l, pair<int,int> r, int n) {
         if (exist_domino(l.second,i)) {
             remove_domino(l.second, i);
             if ( place_domino( make_pair(l.second, i), r, n-1 ) ){
-                //cout << l.second << " " << i << "| ";
                 return true;
             }
             else {
