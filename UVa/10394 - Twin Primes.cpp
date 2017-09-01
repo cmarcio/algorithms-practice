@@ -17,7 +17,7 @@ void checktwins() {
 }
 
 void sieve(long long upperbound) {
-    int count = 0;
+    int count = 1;
     sieve_size = upperbound + 1;
     bs.set();
     bs[0] = bs[1] = 0;
