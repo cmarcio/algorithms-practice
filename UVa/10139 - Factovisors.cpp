@@ -4,7 +4,7 @@
 #include <vector>
 #include <cmath>
 
-using namespace std;
+using namespace std;    
 
 long long sieve_size;
 bitset<10000010> bs;
