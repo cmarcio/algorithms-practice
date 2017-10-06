@@ -9,6 +9,8 @@
         "utility": "cpp",
         "tuple": "cpp",
         "cmath": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "bitset": "cpp",
+        "system_error": "cpp"
     }
 }
